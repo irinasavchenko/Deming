@@ -237,11 +237,18 @@
             padding: 0 15px;
             li {
               margin: 1px 0 0 0;
-//              width: 230px;
-              padding: 0 65px;
+              width: 225px;
+              padding: 0;
               height: 38px;
               border: 1px solid #d8d6cf;
               background: #fff;
+
+              &.ui-state-active {
+                border: 1px solid #59ba39;
+                background: #59ba39;
+                font-weight: normal;
+              }
+
               a:focus {
                 outline: none;
               }
@@ -256,46 +263,59 @@
             li.ui-tabs-active {
               margin: 1px 0 -1px 0;
             }
-            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-              background: #59ba39;
-              span.caret-green {
-                width: 8px;
-                height: 5px;
-                background: url(../images/spr_arrows.png) no-repeat -7px 0;
-                position: absolute;
-                bottom: -5px;
-                left: 50%;
-                display: block;
-              }
-              a {
-                color: #fff;
-                font-size: 18px;
-                font-family: "Zurich__Condensed_BT";
-              }
-            }
-            .ui-widget-content .ui-state-active,
-            .ui-widget-header .ui-state-active {
-              border: 1px solid #aaaaaa;
-              background: #59ba39;
-              font-weight: normal;
-//              span.caret-green {
-//                width: 8px;
-//                height: 5px;
-//                background: url(../images/spr_arrows.png) no-repeat -7px 0;
-//                position: absolute;
-//                bottom: -5px;
-//                left: 50%;
-//                display: block;
-//              }
-              a {
-                color: #fff;
-                font-size: 18px;
-                font-family: "Zurich__Condensed_BT";
-                position: relative;
-                width: 100%;
-              }
+            .ui-state-default {
 
             }
+            .ui-state-active {
+              background: #59ba39;
+
+              a {
+                color: #fff;
+                font-size: 18px;
+                font-family: "Zurich__Condensed_BT";
+                width: 100%;
+              }
+              .green-caret-active {
+                display: block;
+              }
+
+              .green-caret {
+                display: none;
+              }
+            }
+
+            .green-caret-active {
+              width: 8px;
+              height: 5px;
+              background: url(../images/spr_arrows.png) no-repeat -7px 0;
+              position: absolute;
+              display: none;
+              left: 108px;
+              bottom: -6px;
+            }
+
+            .tab-content {
+              position: relative;
+              padding-left: 15px;
+            }
+
+            .green-caret {
+              width: 6px;
+              height: 7px;
+              background: url(../images/spr_arrows.png) no-repeat;
+              position: absolute;
+              left: 3px;
+              top: 7px;
+              display: block;
+            }
+
+
+//            .ui-widget-content .ui-state-active,
+//            .ui-widget-header .ui-state-active {
+//              border: 1px solid #59ba39;
+//              background: #59ba39;
+//              font-weight: normal;
+//            }
 
             .ui-widget-content .ui-state-focus a,
             .ui-widget-header .ui-state-focus a {

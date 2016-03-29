@@ -212,10 +212,15 @@ table {
           padding: 0 15px; }
           #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li {
             margin: 1px 0 0 0;
-            padding: 0 65px;
+            width: 225px;
+            padding: 0;
             height: 38px;
             border: 1px solid #d8d6cf;
             background: #fff; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li.ui-state-active {
+              border: 1px solid #59ba39;
+              background: #59ba39;
+              font-weight: normal; }
             #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li a:focus {
               outline: none; }
           #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li:last-child {
@@ -224,32 +229,36 @@ table {
             border-radius: 8px 0 0 8px; }
           #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li.ui-tabs-active {
             margin: 1px 0 -1px 0; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active {
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active {
             background: #59ba39; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active span.caret-green, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active span.caret-green, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active span.caret-green {
-              width: 8px;
-              height: 5px;
-              background: url(../images/spr_arrows.png) no-repeat -7px 0;
-              position: absolute;
-              bottom: -5px;
-              left: 50%;
-              display: block; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active a, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active a, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active a {
-              color: #fff;
-              font-size: 18px;
-              font-family: "Zurich__Condensed_BT"; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active,
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active {
-            border: 1px solid #aaaaaa;
-            background: #59ba39;
-            font-weight: normal; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active a,
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active a {
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active a {
               color: #fff;
               font-size: 18px;
               font-family: "Zurich__Condensed_BT";
-              position: relative;
               width: 100%; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active .green-caret-active {
+              display: block; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active .green-caret {
+              display: none; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .green-caret-active {
+            width: 8px;
+            height: 5px;
+            background: url(../images/spr_arrows.png) no-repeat -7px 0;
+            position: absolute;
+            display: none;
+            left: 108px;
+            bottom: -6px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .tab-content {
+            position: relative;
+            padding-left: 15px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .green-caret {
+            width: 6px;
+            height: 7px;
+            background: url(../images/spr_arrows.png) no-repeat;
+            position: absolute;
+            left: 3px;
+            top: 7px;
+            display: block; }
           #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-focus a,
           #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-focus a {
             outline: none; }
