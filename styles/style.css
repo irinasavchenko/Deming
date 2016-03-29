@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Klavika Medium Plain";
+  src: url("../fonts/Klavika Medium Plain/Klavika Medium Plain.otf") format("opentype"); }
+@font-face {
+  font-family: "Myriad Pro Semibold";
+  src: url("../fonts/Myriad Pro Semibold/Myriad Pro Semibold.ttf") format "truetype"; }
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../fonts/Myriad Pro Regular/Myriad Pro Regular.ttf") format "truetype"; }
+@font-face {
+  font-family: "Zurich__Condensed_BT";
+  src: url("../fonts/Zurich__Condensed_BT/Zurich__Condensed_BT.ttf") format "truetype"; }
+@font-face {
+  font-family: "Zurich__Bold_Condensed_BT";
+  src: url("../fonts/Zurich__Condensed_BT/Zurich__Bold_Condensed_BT.ttf") format "truetype"; }
+.center {
+  margin: 0 auto; }
+
+.clearfix {
+  display: table;
+  clear: both;
+  content: ""; }
+
+#wrapper {
+  background-color: #f6f3ed; }
+  #wrapper .content-wrapper {
+    width: 990px; }
+    #wrapper .content-wrapper header {
+      height: 110px;
+      background: url(../images/shape-1-header.jpg) no-repeat 20px 25px; }
+      #wrapper .content-wrapper header .logo {
+        padding-top: 35px;
+        padding-left: 55px;
+        text-transform: uppercase;
+        float: left; }
+        #wrapper .content-wrapper header .logo .name-company p {
+          font-family: "Klavika Medium Plain";
+          font-size: 34px;
+          color: #231f20; }
+        #wrapper .content-wrapper header .logo .slogan-company p {
+          font-family: "Myriad Pro Semibold";
+          font-size: 11px;
+          color: #858689; }
+      #wrapper .content-wrapper header .company-info {
+        float: right;
+        padding-top: 18px;
+        font-family: "Myriad Pro Regular"; }
+        #wrapper .content-wrapper header .company-info p:first-child {
+          color: #585755;
+          font-size: 12px;
+          margin-bottom: 5px; }
+        #wrapper .content-wrapper header .company-info p {
+          font-size: 20px;
+          color: #373737;
+          text-align: right; }
+        #wrapper .content-wrapper header .company-info ul.nav {
+          float: right;
+          display: block;
+          margin-top: 18px; }
+          #wrapper .content-wrapper header .company-info ul.nav li {
+            float: left;
+            display: block; }
+            #wrapper .content-wrapper header .company-info ul.nav li a {
+              font-size: 13px;
+              text-transform: uppercase;
+              color: #209a28;
+              font-family: "Zurich__Condensed_BT";
+              padding-left: 20px;
+              text-decoration: none; }
+    #wrapper .content-wrapper nav.main-nav {
+      height: 40px;
+      width: 100%;
+      background-color: #4cb433; }
+      #wrapper .content-wrapper nav.main-nav ul {
+        display: block;
+        padding: 0 13px; }
+        #wrapper .content-wrapper nav.main-nav ul li {
+          display: block;
+          float: left; }
+          #wrapper .content-wrapper nav.main-nav ul li a {
+            text-decoration: none;
+            padding: 12px 20px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 15px;
+            font-family: "Zurich__Bold_Condensed_BT"; }
+        #wrapper .content-wrapper nav.main-nav ul li:hover a {
+          color: #209a28; }
+    #wrapper .content-wrapper .active-link {
+      padding-top: 15px;
+      padding-bottom: 10px; }
+      #wrapper .content-wrapper .active-link a {
+        color: #14961c;
+        font-size: 12px;
+        font-family: arial, sans-serif;
+        padding-left: 25px;
+        text-decoration: none; }
+    #wrapper .content-wrapper .main-content .wrapper-main-content {
+      float: left;
+      padding: 17px;
+      background-color: #fff; }
+      #wrapper .content-wrapper .main-content .wrapper-main-content .slider {
+        width: 706px;
+        position: relative; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel {
+          border: 1px solid #d4bd8a;
+          border-radius: 8px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control {
+            width: 235px;
+            background-color: #2b241c;
+            text-align: left;
+            padding-left: 15px; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right h2, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control h2 {
+              font-size: 22px;
+              font-family: "Zurich__Condensed_BT";
+              color: #fff; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right h2 > span, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control h2 > span {
+              color: #28b028;
+              font-size: 32px; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right p, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control p {
+              font-size: 12px;
+              color: #fff;
+              font-family: arial, sans-serif; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right p > span, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control p > span {
+              color: #28b028; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right ol li, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control ol li {
+              width: 20px;
+              height: 20px;
+              background-color: #6b685e;
+              border: 1px solid #6b685e;
+              vertical-align: middle; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right ol li.active, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control ol li.active {
+              width: 25px;
+              height: 25px;
+              background-color: #4fbb35;
+              border: 1px solid #4fbb35;
+              border-radius: 25px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .carousel-pagination li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #6b685e;
+            vertical-align: middle;
+            border-radius: 25px;
+            text-align: center;
+            border: 1px solid #6b685e;
+            cursor: pointer;
+            text-indent: 0; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .carousel-pagination li.active {
+              width: 25px;
+              height: 25px;
+              background-color: #4fbb35;
+              border-color: #4fbb35; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content .slider .slider-caption {
+          float: left;
+          width: 470px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content .slider .slider-caption h1 {
+            color: #444137;
+            font-family: "Zurich__Condensed_BT";
+            font-size: 26px;
+            margin: 25px 0 0 0; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content .slider .slider-caption p {
+            color: #595447;
+            font-size: 12px;
+            font-family: arial, sans-serif;
+            margin: 17px 0;
+            line-height: 1.5; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content .slider .slider-caption p > a {
+            color: #28b028;
+            font-weight: bold;
+            text-decoration: underline; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content .slider .photographer {
+          position: absolute;
+          right: 45px;
+          bottom: -10px; }
+      #wrapper .content-wrapper .main-content .wrapper-main-content #tabs {
+        border: none; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul {
+          border: none;
+          padding: 0 15px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li {
+            margin: 1px 0 0 0;
+            padding: 0 65px;
+            height: 38px;
+            border: 1px solid #d8d6cf;
+            background: #fff; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li a:focus {
+              outline: none; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li:last-child {
+            border-radius: 0 8px 8px 0; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li:first-child {
+            border-radius: 8px 0 0 8px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li.ui-tabs-active {
+            margin: 1px 0 -1px 0; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active {
+            background: #59ba39; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active span.caret-green, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active span.caret-green, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active span.caret-green {
+              width: 8px;
+              height: 5px;
+              background: url(../images/spr_arrows.png) no-repeat -7px 0;
+              position: absolute;
+              bottom: -5px;
+              left: 50%;
+              display: block; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active a, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active a, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active a {
+              color: #fff;
+              font-size: 18px;
+              font-family: "Zurich__Condensed_BT"; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active,
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active {
+            border: 1px solid #aaaaaa;
+            background: #59ba39;
+            font-weight: normal; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-active a,
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-active a {
+              color: #fff;
+              font-size: 18px;
+              font-family: "Zurich__Condensed_BT";
+              position: relative;
+              width: 100%; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-focus a,
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-focus a {
+            outline: none; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content,
+        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-header {
+          background: #fff; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content span.caret-green,
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-header span.caret-green {
+            width: 6px;
+            height: 7px;
+            background: url(../images/spr_arrows.png) no-repeat;
+            position: absolute;
+            bottom: 14px;
+            left: 20px; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content a,
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-header a {
+            color: #444137;
+            font-size: 18px;
+            font-family: "Zurich__Condensed_BT";
+            position: relative;
+            width: 100%;
+            text-align: center; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-tabs-nav .ui-tabs-anchor {
+          padding-left: 0;
+          padding-right: 0; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content {
+          background-color: #fff; }
+      #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel {
+        width: 705px;
+        padding: 0 15px; }
+        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul {
+          display: block;
+          margin-top: 23px;
+          padding: 0; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li {
+            display: block;
+            float: left;
+            border: none;
+            width: 220px;
+            height: 245px;
+            margin-right: 15px; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a {
+              text-decoration: none;
+              text-align: left;
+              font-family: arial, sans-serif; }
+              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a img {
+                border: 4px solid #e9e6df;
+                border-radius: 8px; }
+              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a h3 {
+                font-weight: bold;
+                font-size: 14px;
+                color: #3a3731;
+                margin: 10px 0 12px 0; }
+              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a p {
+                font-size: 12px;
+                line-height: 1.5; }
+          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li:last-child {
+            margin-right: 0; }
+      #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1:after {
+        content: "";
+        clear: both;
+        display: table; }
+      #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1 ul:after {
+        content: "";
+        clear: both;
+        display: table; }
+      #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-2.ui-widget-content.ui-tabs-panel, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-3.ui-widget-content.ui-tabs-panel {
+        width: 705px;
+        padding: 0 15px; }
+    #wrapper .content-wrapper .sidebar {
+      float: right;
+      width: 250px;
+      height: 500px;
+      background-color: #f4f2ec; }
+
+/*# sourceMappingURL=style.css.map */

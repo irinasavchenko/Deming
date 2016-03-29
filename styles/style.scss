@@ -1,0 +1,416 @@
+@import "_reset";
+
+
+@font-face {
+  font-family: "Klavika Medium Plain";
+  src: url("../fonts/Klavika Medium Plain/Klavika Medium Plain.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Myriad Pro Semibold";
+  src: url("../fonts/Myriad Pro Semibold/Myriad Pro Semibold.ttf") format ("truetype")
+}
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../fonts/Myriad Pro Regular/Myriad Pro Regular.ttf") format ("truetype")
+}
+
+@font-face {
+  font-family: "Zurich__Condensed_BT";
+  src: url("../fonts/Zurich__Condensed_BT/Zurich__Condensed_BT.ttf") format ("truetype")
+}
+
+@font-face {
+  font-family: "Zurich__Bold_Condensed_BT";
+  src: url("../fonts/Zurich__Condensed_BT/Zurich__Bold_Condensed_BT.ttf") format ("truetype")
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.clearfix {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+#wrapper {
+  background-color: #f6f3ed;
+  .content-wrapper {
+    width: 990px;
+    header {
+      height: 110px;
+      background: url(../images/shape-1-header.jpg) no-repeat 20px 25px;
+      .logo {
+        padding-top: 35px;
+        padding-left: 55px;
+        text-transform: uppercase;
+        float: left;
+        .name-company p {
+          font-family: "Klavika Medium Plain";
+          font-size: 34px;
+          color: #231f20;
+        }
+        .slogan-company p {
+          font-family: "Myriad Pro Semibold";
+          font-size: 11px;
+          color: #858689;
+        }
+      }
+      .company-info {
+        float: right;
+        padding-top: 18px;
+        font-family: "Myriad Pro Regular";
+        p:first-child {
+          color: #585755;
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 20px;
+          color: #373737;
+          text-align: right;
+        }
+        ul.nav {
+          float: right;
+          display: block;
+          margin-top: 18px;
+          li {
+            float: left;
+            display: block;
+            a {
+              font-size: 13px;
+              text-transform: uppercase;
+              color: #209a28;
+              font-family: "Zurich__Condensed_BT";
+              padding-left: 20px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    nav.main-nav {
+      height: 40px;
+      width: 100%;
+      background-color: #4cb433;
+      ul {
+        display: block;
+        padding: 0 13px;
+        li {
+          display: block;
+          float: left;
+          a {
+            text-decoration: none;
+            padding: 12px 20px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 15px;
+            font-family: "Zurich__Bold_Condensed_BT";
+          }
+        }
+        li:hover a {
+          color: #209a28;
+        }
+      }
+    }
+    .active-link {
+      padding-top: 15px;
+      padding-bottom: 10px;
+      a {
+        color: #14961c;
+        font-size: 12px;
+        font-family: arial, sans-serif;
+        padding-left: 25px;
+        text-decoration: none;
+      }
+    }
+    .main-content {
+      .wrapper-main-content {
+        float: left;
+        padding: 17px;
+        background-color: #fff;
+        .slider {
+          width: 706px;
+          position: relative;
+          //SLIDER
+          .carousel {
+            border: 1px solid #d4bd8a;
+            border-radius: 8px;
+            div.right, div.carousel-control {
+              width: 235px;
+              background-color: #2b241c;
+              text-align: left;
+              padding-left: 15px;
+              h2 {
+                font-size: 22px;
+                font-family: "Zurich__Condensed_BT";
+                color: #fff;
+              }
+              h2 > span {
+                color: #28b028;
+                font-size: 32px;
+              }
+              p {
+                font-size: 12px;
+                color: #fff;
+                font-family: arial, sans-serif;
+              }
+              p > span {
+                color: #28b028;
+              }
+              ol {
+                li {
+                  width: 20px;
+                  height: 20px;
+                  background-color: #6b685e;
+                  border: 1px solid #6b685e;
+                  vertical-align: middle;
+                }
+                li.active {
+                  width: 25px;
+                  height: 25px;
+                  background-color: #4fbb35;
+                  border: 1px solid #4fbb35;
+                  border-radius: 25px;
+
+                }
+              }
+            }
+            .carousel-pagination li {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              background-color: #6b685e;
+              vertical-align: middle;
+              border-radius: 25px;
+              text-align: center;
+              border: 1px solid #6b685e;
+              cursor: pointer;
+              text-indent: 0;
+
+              &.active {
+                width: 25px;
+                height: 25px;
+                background-color: #4fbb35;
+                border-color: #4fbb35;
+              }
+            }
+          }
+          .slider-caption {
+            float: left;
+            width: 470px;
+            h1 {
+            color: #444137;
+            font-family: "Zurich__Condensed_BT";
+            font-size: 26px;
+            margin: 25px 0 0 0;
+            }
+            p {
+              color: #595447;
+              font-size: 12px;
+              font-family: arial, sans-serif;
+              margin: 17px 0;
+              line-height: 1.5;
+            }
+            p>a {
+              color: #28b028;
+              font-weight: bold;
+              text-decoration: underline;
+            }
+          }
+          .photographer {
+            position: absolute;
+            right: 45px;
+            bottom: -10px;
+
+          }
+        }
+
+        #tabs {
+          border: none;
+          ul {
+            border: none;
+            padding: 0 15px;
+            li {
+              margin: 1px 0 0 0;
+//              width: 230px;
+              padding: 0 65px;
+              height: 38px;
+              border: 1px solid #d8d6cf;
+              background: #fff;
+              a:focus {
+                outline: none;
+              }
+            }
+            li:last-child {
+              border-radius: 0 8px 8px 0;
+            }
+
+            li:first-child {
+              border-radius: 8px 0 0 8px;
+            }
+            li.ui-tabs-active {
+              margin: 1px 0 -1px 0;
+            }
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+              background: #59ba39;
+              span.caret-green {
+                width: 8px;
+                height: 5px;
+                background: url(../images/spr_arrows.png) no-repeat -7px 0;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                display: block;
+              }
+              a {
+                color: #fff;
+                font-size: 18px;
+                font-family: "Zurich__Condensed_BT";
+              }
+            }
+            .ui-widget-content .ui-state-active,
+            .ui-widget-header .ui-state-active {
+              border: 1px solid #aaaaaa;
+              background: #59ba39;
+              font-weight: normal;
+//              span.caret-green {
+//                width: 8px;
+//                height: 5px;
+//                background: url(../images/spr_arrows.png) no-repeat -7px 0;
+//                position: absolute;
+//                bottom: -5px;
+//                left: 50%;
+//                display: block;
+//              }
+              a {
+                color: #fff;
+                font-size: 18px;
+                font-family: "Zurich__Condensed_BT";
+                position: relative;
+                width: 100%;
+              }
+
+            }
+
+            .ui-widget-content .ui-state-focus a,
+            .ui-widget-header .ui-state-focus a {
+              outline: none;
+
+            }
+          }
+
+          .ui-widget-content,
+          .ui-widget-header  {
+            background: #fff;
+            span.caret-green {
+              width: 6px;
+              height: 7px;
+              background: url(../images/spr_arrows.png) no-repeat;
+              position: absolute;
+              bottom: 14px;
+//              left: 55px;
+              left: 20px;
+            }
+            a {
+              color: #444137;
+              font-size: 18px;
+              font-family: "Zurich__Condensed_BT";
+              position: relative;
+              width: 100%;
+              text-align: center;
+            }
+
+          }
+
+
+          // }
+
+
+
+          .ui-tabs-nav .ui-tabs-anchor {
+            padding-left: 0;
+            padding-right: 0;
+
+          }
+          .ui-widget-content {
+            background-color: #fff;
+          }
+
+        }
+
+        #tabs-1.ui-widget-content.ui-tabs-panel {
+          width: 705px;
+          padding: 0 15px;
+          ul {
+            display: block;
+            margin-top: 23px;
+            padding: 0;
+            li {
+              display: block;
+              float: left;
+              border: none;
+              width: 220px;
+              height: 245px;
+              margin-right: 15px;
+              a {
+                text-decoration: none;
+                text-align: left;
+                font-family: arial, sans-serif;
+                img {
+                  border: 4px solid #e9e6df;
+                  border-radius: 8px;
+                }
+                h3 {
+                  font-weight: bold;
+                  font-size: 14px;
+                  color: #3a3731;
+                  margin: 10px 0 12px 0;
+                }
+                p {
+                  font-size: 12px;
+                  line-height: 1.5;
+                }
+              }
+            }
+            li:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        #tabs-1:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        #tabs-1 ul:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        #tabs-2.ui-widget-content.ui-tabs-panel, #tabs-3.ui-widget-content.ui-tabs-panel {
+          width: 705px;
+          padding: 0 15px;
+        }
+      }
+    }
+    .sidebar {
+      float: right;
+      width: 250px;
+      height: 500px;
+      background-color: #f4f2ec;
+    }
+  }
+}
+
+
+
+
+
