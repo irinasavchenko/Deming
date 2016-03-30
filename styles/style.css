@@ -53,6 +53,9 @@ table {
   clear: both;
   content: ""; }
 
+button:focus {
+  outline: none; }
+
 #wrapper {
   background-color: #f6f3ed; }
   #wrapper .content-wrapper {
@@ -207,43 +210,43 @@ table {
             position: absolute;
             right: 45px;
             bottom: -10px; }
-        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs {
+        #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block {
           border: none;
           padding: 0; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul {
+          #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul {
             border: none;
             padding: 0; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li {
               margin: 1px 0 0 0;
               width: 225px;
               padding: 0;
               height: 38px;
               border: 1px solid #d8d6cf;
               background: #fff; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li.ui-state-active {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li.ui-state-active {
                 border: 1px solid #59ba39;
                 background: #59ba39;
                 font-weight: normal; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li a:focus {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li a:focus {
                 outline: none; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li:last-child {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li:last-child {
               border-radius: 0 8px 8px 0; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li:first-child {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li:first-child {
               border-radius: 8px 0 0 8px; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul li.ui-tabs-active {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li.ui-tabs-active {
               margin: 1px 0 -1px 0; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .ui-state-active {
               background: #59ba39; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active a {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .ui-state-active a {
                 color: #fff;
                 font-size: 18px;
                 font-family: "Zurich__Condensed_BT";
                 width: 100%; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active .green-caret-active {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .ui-state-active .green-caret-active {
                 display: block; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-state-active .green-caret {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .ui-state-active .green-caret {
                 display: none; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .green-caret-active {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .green-caret-active {
               width: 8px;
               height: 5px;
               background: url(../images/spr_arrows.png) no-repeat -7px 0;
@@ -251,10 +254,10 @@ table {
               display: none;
               left: 108px;
               bottom: -6px; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .tab-content {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .tab-content {
               position: relative;
               padding-left: 15px; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .green-caret {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .green-caret {
               width: 6px;
               height: 7px;
               background: url(../images/spr_arrows.png) no-repeat;
@@ -262,137 +265,292 @@ table {
               left: 3px;
               top: 7px;
               display: block; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-content .ui-state-focus a,
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs ul .ui-widget-header .ui-state-focus a {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .ui-widget-content .ui-state-focus a,
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul .ui-widget-header .ui-state-focus a {
               outline: none; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content,
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-header {
+          #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-content,
+          #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-header {
             background: #fff; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content span.caret-green,
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-header span.caret-green {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-content span.caret-green,
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-header span.caret-green {
               width: 6px;
               height: 7px;
               background: url(../images/spr_arrows.png) no-repeat;
               position: absolute;
               bottom: 14px;
               left: 20px; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content a,
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-header a {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-content a,
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-header a {
               color: #444137;
               font-size: 18px;
               font-family: "Zurich__Condensed_BT";
               position: relative;
               width: 100%;
               text-align: center; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-tabs-nav .ui-tabs-anchor {
+          #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-tabs-nav .ui-tabs-anchor {
             padding-left: 0;
             padding-right: 0; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs .ui-widget-content {
+          #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block .ui-widget-content {
             background-color: #fff; }
-        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel {
+        #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel {
           width: 705px;
           padding: 0; }
-          #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul {
+          #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul {
             display: block;
             margin-top: 23px;
             padding: 0; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li {
               display: block;
               float: left;
               border: none;
               width: 220px;
               height: 245px;
               margin-right: 15px; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li a {
                 text-decoration: none;
                 text-align: left;
                 font-family: arial, sans-serif; }
-                #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a img {
+                #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li a img {
                   border: 4px solid #e9e6df;
                   border-radius: 8px; }
-                #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a h3 {
+                #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li a h3 {
                   font-weight: bold;
                   font-size: 14px;
                   color: #3a3731;
                   margin: 10px 0 12px 0; }
-                #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li a p {
+                #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li a p {
                   font-size: 12px;
                   line-height: 1.5; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1.ui-widget-content.ui-tabs-panel ul li:last-child {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li:last-child {
               margin-right: 0; }
-        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1:after {
+        #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper:after {
           content: "";
           clear: both;
           display: table; }
-        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-1 ul:after {
+        #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper ul:after {
           content: "";
           clear: both;
           display: table; }
-        #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-2.ui-widget-content.ui-tabs-panel, #wrapper .content-wrapper .main-content .wrapper-main-content #tabs-3.ui-widget-content.ui-tabs-panel {
-          width: 705px;
-          padding: 0 15px; }
     #wrapper .content-wrapper .sidebar {
       float: right;
       width: 250px;
-      height: 500px;
-      background-color: #f4f2ec; }
-      #wrapper .content-wrapper .sidebar h3 {
-        font-family: "Myriad Pro Regular";
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #3f3b30; }
-      #wrapper .content-wrapper .sidebar .selects ul.list-selects li {
-        height: 33px; }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox {
-          width: 197px !important;
-          height: 23px;
-          border: 1px solid #cfcdc5;
-          background-image: none;
-          box-shadow: 0px 0 12px #e8e5de; }
-          #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton {
-            background: url(../images/img-select-default.png);
-            width: 21px;
-            height: 19px;
-            margin-top: 2px; }
-          #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
-            background: url(../images/img-select-default.png);
-            width: 21px;
-            height: 19px;
-            margin-top: 2px; }
-          #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox span.jquery-selectbox-currentItem {
-            font-size: 11px;
+      background-color: #ffffff;
+      color: #3f3b30; }
+      #wrapper .content-wrapper .sidebar .search-part, #wrapper .content-wrapper .sidebar .sign-up-part, #wrapper .content-wrapper .sidebar .news-part {
+        border-bottom: 1px solid #e1dbce; }
+        #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar {
+          background-color: #f4f2ec;
+          margin: 1px;
+          padding: 20px;
+          border-left: 1px solid #e8e3da; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar h3, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar h3, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar h3 {
+            font-family: "Myriad Pro Regular";
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 0; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar p, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar p, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar p {
+            font-size: 12px;
             font-family: arial, sans-serif;
-            line-height: 16px;
-            padding-left: 8px;
-            color: #999999; }
-          #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list {
-            width: 196px !important;
-            height: 50px !important;
+            margin: 10px 0;
+            line-height: 1.5; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li {
+            height: 31px;
+            margin-bottom: 12px; }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox {
+              width: 197px !important;
+              height: 25px;
+              border: 1px solid #cfcdc5;
+              border-radius: 5px;
+              background-image: none;
+              box-shadow: 0px 0 3px #adaaa3;
+              background: -webkit-linear-gradient(top, #ffffff, #f4f3f1);
+              background: -moz-linear-gradient(top, #ffffff, #f4f3f1);
+              background: -ms-linear-gradient(top, #ffffff, #f4f3f1); }
+              #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton {
+                background: url(../images/img-select-default.png);
+                width: 21px;
+                height: 19px;
+                margin-top: 2px; }
+              #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
+                background: url(../images/img-select-default.png);
+                width: 21px;
+                height: 19px;
+                margin-top: 2px; }
+              #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox span.jquery-selectbox-currentItem, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox span.jquery-selectbox-currentItem, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox span.jquery-selectbox-currentItem {
+                font-size: 11px;
+                font-family: arial, sans-serif;
+                line-height: 16px;
+                padding-left: 8px;
+                color: #999999;
+                box-shadow: inset -1px -2px 6px #ffffff; }
+              #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list {
+                width: 196px !important;
+                height: 50px !important;
+                border: 1px solid #cfcdc5;
+                background-color: #fff;
+                top: 21px;
+                padding: 2px 0; }
+                #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span {
+                  font-size: 11px;
+                  font-family: arial, sans-serif;
+                  line-height: 16px;
+                  padding-left: 8px;
+                  color: #999; }
+                #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span.listelementhover, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span.listelementhover, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span.listelementhover {
+                  background-color: #cacaca; }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox.selecthover, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox.selecthover, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox.selecthover {
+              border: 1px solid #cfcdc5;
+              background-image: none;
+              background: -webkit-linear-gradient(top, #ffffff, #f4f3f1);
+              background: -moz-linear-gradient(top, #ffffff, #f4f3f1);
+              background: -ms-linear-gradient(top, #ffffff, #f4f3f1); }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem {
+              color: #231f20; }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton {
+              background: url(../images/img-select-active.png); }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton.morebuttonhover, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton.morebuttonhover, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton.morebuttonhover {
+              background: url(../images/img-select-active.png); }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span {
+              color: #231f20; }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span.listelementhover, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span.listelementhover, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span.listelementhover {
+              background-color: #615b49; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search {
+            width: 180px;
+            height: 34px;
+            border: 1px solid #0c932f;
+            border-right: none;
+            padding: 0;
+            background: -webkit-linear-gradient(top, #66c13e, #0f941a);
+            background: -moz-linear-gradient(top, #66c13e, #0f941a);
+            background: -ms-linear-gradient(top, #66c13e, #0f941a);
+            position: relative;
+            box-shadow: 0px 0 5px #7b7b78;
+            z-index: 2;
+            border-radius: 5px 0 0 5px;
+            margin-top: 3px;
+            margin-bottom: 20px; }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search span.button-arrow, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search span.button-arrow, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search span.button-arrow {
+              height: 34px;
+              width: 19px;
+              background-image: url(../images/img-button-arrow.png);
+              position: absolute;
+              right: -19px;
+              top: -1px; }
+            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search .button, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search .button, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search .button {
+              background: url(../images/img-button-arrow-right.png) no-repeat 95% 50%;
+              width: 100%;
+              height: 100%;
+              z-index: 999;
+              box-shadow: inset 1px 1px 1px #81de41; }
+              #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search .button p, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search .button p, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search .button p {
+                font-family: "Klavika Medium Plain";
+                text-transform: uppercase;
+                font-size: 15px;
+                color: #ffffff;
+                padding-left: 15px;
+                margin: 0;
+                text-align: left;
+                line-height: 32px; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="email"] {
+            width: 115px;
+            height: 24px;
             border: 1px solid #cfcdc5;
-            background-color: #fff;
-            top: 23px;
-            padding: 2px 0; }
-            #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span {
-              font-size: 11px;
-              font-family: arial, sans-serif;
-              line-height: 16px;
-              padding-left: 8px;
-              color: #999; }
-            #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-list span.listelementhover {
-              background-color: #cacaca; }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li .jquery-selectbox.selecthover {
-          border: 1px solid #cfcdc5;
-          background-color: #fff;
-          background-image: none; }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem {
-          color: #231f20; }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton {
-          background: url(../images/img-select-active.png); }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton.morebuttonhover {
-          background: url(../images/img-select-active.png); }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span {
-          color: #231f20; }
-        #wrapper .content-wrapper .sidebar .selects ul.list-selects li.active-select .jquery-selectbox-list span.listelementhover {
-          background-color: #615b49; }
+            border-radius: 5px;
+            box-shadow: 0px 0 3px #adaaa3;
+            padding-left: 10px;
+            font-size: 11px;
+            color: #666666;
+            font-family: arial, sans-serif;
+            margin-right: 10px; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="email"] {
+            width: 195px;
+            margin-bottom: 7px; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.quick-search, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.quick-search, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.quick-search {
+            border: 1px solid #0c932f;
+            background: -webkit-linear-gradient(top, #66c13e, #0f941a);
+            background: -moz-linear-gradient(top, #66c13e, #0f941a);
+            background: -ms-linear-gradient(top, #66c13e, #0f941a);
+            box-shadow: 0px 0 5px #7b7b78;
+            font-family: "Klavika Medium Plain";
+            font-size: 14px;
+            color: #ffffff;
+            text-transform: uppercase;
+            width: 65px;
+            height: 25px;
+            border-radius: 3px;
+            padding: 0; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .news:last-child, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .news:last-child, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .news:last-child {
+            margin-bottom: 16px; }
+        #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar {
+          padding-bottom: 14px; }
+        #wrapper .content-wrapper .sidebar .search-part .news p, #wrapper .content-wrapper .sidebar .sign-up-part .news p, #wrapper .content-wrapper .sidebar .news-part .news p {
+          margin: 7px 0 0 0; }
+      #wrapper .content-wrapper .sidebar .news-part h4 {
+        font-weight: bold;
+        font-size: 12px;
+        font-family: arial, sans-serif;
+        line-height: 1.5;
+        margin-top: 10px; }
+      #wrapper .content-wrapper .sidebar .news-part .news {
+        margin-bottom: 25px; }
+  #wrapper .basement {
+    margin-top: 20px; }
+    #wrapper .basement .name-basement {
+      height: 40px;
+      border-bottom: 2px solid #635543;
+      text-align: center;
+      background: -webkit-linear-gradient(top, #999387, #6f685e);
+      background: -moz-linear-gradient(top, #999387, #6f685e);
+      background: -ms-linear-gradient(top, #999387, #6f685e);
+      border-radius: 5px; }
+      #wrapper .basement .name-basement p {
+        font-size: 16px;
+        font-family: arial, sans-serif;
+        font-style: italic;
+        color: #ffffff;
+        line-height: 42px; }
+    #wrapper .basement .content-basement {
+      background-color: #f4f2ec;
+      padding-top: 20px;
+      height: 165px; }
+      #wrapper .basement .content-basement .twitter-info {
+        float: left;
+        width: 250px;
+        border-right: 1px solid #d8d6ce;
+        padding: 0 30px 0 21px; }
+        #wrapper .basement .content-basement .twitter-info a.twitter {
+          font-family: "Klavika Medium Plain";
+          background: url("../images/img-twitter.png") no-repeat right center;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #64522a;
+          padding-right: 36px; }
+        #wrapper .basement .content-basement .twitter-info p {
+          color: #757268;
+          font-size: 11px;
+          font-family: arial, sans-serif;
+          line-height: 1.5; }
+        #wrapper .basement .content-basement .twitter-info button.facebook {
+          background-image: url(../images/img-facebook.png);
+          width: 198px;
+          height: 37px; }
+      #wrapper .basement .content-basement .links-info, #wrapper .basement .content-basement .contacts-info {
+        float: left;
+        margin: 0 25px; }
+        #wrapper .basement .content-basement .links-info ul, #wrapper .basement .content-basement .contacts-info ul {
+          float: left;
+          margin-right: 45px; }
+          #wrapper .basement .content-basement .links-info ul li a, #wrapper .basement .content-basement .contacts-info ul li a {
+            font-size: 12px;
+            color: #757268;
+            font-family: arial, sans-serif; }
+        #wrapper .basement .content-basement .links-info h3, #wrapper .basement .content-basement .contacts-info h3 {
+          margin: 0 0 13px 0;
+          font-size: 14px;
+          color: #64522a;
+          font-family: "Klavika Medium Plain";
+          text-transform: uppercase; }
+      #wrapper .basement .content-basement .contacts-info {
+        border-right: 1px solid #d8d6ce; }
 
 /*# sourceMappingURL=style.css.map */
