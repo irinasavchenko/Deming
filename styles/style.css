@@ -57,7 +57,7 @@ button:focus {
   outline: none; }
 
 #wrapper {
-  background-color: #f6f3ed; }
+  background: url(../images/img-backg-wrapper.png) repeat; }
   #wrapper .content-wrapper {
     width: 990px; }
     #wrapper .content-wrapper header {
@@ -71,7 +71,9 @@ button:focus {
         #wrapper .content-wrapper header .logo .name-company p {
           font-family: "Klavika Medium Plain";
           font-size: 34px;
-          color: #231f20; }
+          color: #231f20;
+          line-height: 1;
+          margin: 0; }
         #wrapper .content-wrapper header .logo .slogan-company p {
           font-family: "Myriad Pro Semibold";
           font-size: 11px;
@@ -105,7 +107,10 @@ button:focus {
     #wrapper .content-wrapper nav.main-nav {
       height: 40px;
       width: 100%;
-      background-color: #4cb433; }
+      background: -webkit-linear-gradient(top, #66c13e, #0f941a);
+      background: -moz-linear-gradient(top, #66c13e, #0f941a);
+      background: -ms-linear-gradient(top, #66c13e, #0f941a);
+      box-shadow: inset 1px 1px 1px #81de41; }
       #wrapper .content-wrapper nav.main-nav ul {
         display: block;
         padding: 0 13px; }
@@ -142,36 +147,43 @@ button:focus {
           #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel {
             border: 1px solid #d4bd8a;
             border-radius: 8px; }
-            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control {
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control {
               width: 235px;
               background-color: #2b241c;
               text-align: left;
-              padding-left: 15px; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right h2, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control h2 {
+              padding-left: 15px;
+              opacity: 0.8; }
+              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side h2, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control h2 {
                 font-size: 22px;
                 font-family: "Zurich__Condensed_BT";
                 color: #fff; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right h2 > span, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control h2 > span {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side h2 > span, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control h2 > span {
                 color: #28b028;
                 font-size: 32px; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right p, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control p {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side p, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control p {
                 font-size: 12px;
                 color: #fff;
                 font-family: arial, sans-serif; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right p > span, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control p > span {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side p > span, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control p > span {
                 color: #28b028; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right ol li, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control ol li {
+              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side ul li, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control ul li {
                 width: 20px;
                 height: 20px;
                 background-color: #6b685e;
                 border: 1px solid #6b685e;
-                vertical-align: middle; }
-              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.right ol li.active, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control ol li.active {
+                vertical-align: middle;
+                font-size: 12px;
+                font-weight: bold;
+                color: #cbcbcb;
+                line-height: 20px; }
+              #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .right.right-side ul li.active, #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel div.carousel-control ul li.active {
                 width: 25px;
                 height: 25px;
                 background-color: #4fbb35;
                 border: 1px solid #4fbb35;
-                border-radius: 25px; }
+                border-radius: 25px;
+                color: #ffffff;
+                line-height: 23px; }
             #wrapper .content-wrapper .main-content .wrapper-main-content .slider .carousel .carousel-pagination li {
               display: inline-block;
               width: 20px;
@@ -482,7 +494,7 @@ button:focus {
           #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .news:last-child, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .news:last-child, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .news:last-child {
             margin-bottom: 16px; }
         #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar {
-          padding-bottom: 14px; }
+          padding-bottom: 17px; }
         #wrapper .content-wrapper .sidebar .search-part .news p, #wrapper .content-wrapper .sidebar .sign-up-part .news p, #wrapper .content-wrapper .sidebar .news-part .news p {
           margin: 7px 0 0 0; }
       #wrapper .content-wrapper .sidebar .news-part h4 {
@@ -490,7 +502,7 @@ button:focus {
         font-size: 12px;
         font-family: arial, sans-serif;
         line-height: 1.5;
-        margin-top: 10px; }
+        margin: 10px 0 0 0; }
       #wrapper .content-wrapper .sidebar .news-part .news {
         margin-bottom: 25px; }
   #wrapper .basement {
@@ -512,7 +524,8 @@ button:focus {
     #wrapper .basement .content-basement {
       background-color: #f4f2ec;
       padding-top: 20px;
-      height: 165px; }
+      height: 165px;
+      width: 100%; }
       #wrapper .basement .content-basement .twitter-info {
         float: left;
         width: 250px;
@@ -536,7 +549,7 @@ button:focus {
           height: 37px; }
       #wrapper .basement .content-basement .links-info, #wrapper .basement .content-basement .contacts-info {
         float: left;
-        margin: 0 25px; }
+        padding: 0 30px; }
         #wrapper .basement .content-basement .links-info ul, #wrapper .basement .content-basement .contacts-info ul {
           float: left;
           margin-right: 45px; }
@@ -544,6 +557,8 @@ button:focus {
             font-size: 12px;
             color: #757268;
             font-family: arial, sans-serif; }
+        #wrapper .basement .content-basement .links-info ul:last-child, #wrapper .basement .content-basement .contacts-info ul:last-child {
+          margin-right: 0; }
         #wrapper .basement .content-basement .links-info h3, #wrapper .basement .content-basement .contacts-info h3 {
           margin: 0 0 13px 0;
           font-size: 14px;
@@ -551,6 +566,25 @@ button:focus {
           font-family: "Klavika Medium Plain";
           text-transform: uppercase; }
       #wrapper .basement .content-basement .contacts-info {
-        border-right: 1px solid #d8d6ce; }
+        border-left: 1px solid #d8d6ce; }
+        #wrapper .basement .content-basement .contacts-info p {
+          font-size: 12px;
+          font-family: arial, sans-serif;
+          color: #757268; }
+        #wrapper .basement .content-basement .contacts-info p > span {
+          font-weight: bold; }
+  #wrapper footer {
+    text-align: center;
+    padding: 20px 0 72px 0; }
+    #wrapper footer h5 {
+      font-size: 11px;
+      font-family: arial, sans-serif;
+      font-weight: bold;
+      color: #3a3731; }
+    #wrapper footer p {
+      color: #716c61;
+      font-family: arial, sans-serif;
+      font-size: 11px;
+      margin: 10px 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */
