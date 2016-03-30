@@ -129,6 +129,7 @@
       }
     }
     .main-content {
+      float: left;
       .wrapper-main-content {
         float: left;
         padding: 17px;
@@ -232,9 +233,10 @@
 
         #tabs {
           border: none;
+          padding: 0;
           ul {
             border: none;
-            padding: 0 15px;
+            padding: 0;
             li {
               margin: 1px 0 0 0;
               width: 225px;
@@ -365,7 +367,7 @@
 
         #tabs-1.ui-widget-content.ui-tabs-panel {
           width: 705px;
-          padding: 0 15px;
+          padding: 0;
           ul {
             display: block;
             margin-top: 23px;
@@ -426,6 +428,92 @@
       width: 250px;
       height: 500px;
       background-color: #f4f2ec;
+      h3 {
+        font-family: "Myriad Pro Regular";
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #3f3b30;
+      }
+      .selects {
+        ul.list-selects {
+          li {
+            height: 33px;
+            .jquery-selectbox {
+              width: 197px !important;
+              height: 23px;
+              border: 1px solid #cfcdc5;
+              background-image: none;
+              box-shadow: 0px 0 12px #e8e5de;
+              .jquery-selectbox-moreButton {
+                background: url(../images/img-select-default.png);
+                width: 21px;
+                height: 19px;
+                margin-top: 2px;
+              }
+              .jquery-selectbox-moreButton.morebuttonhover {
+                background: url(../images/img-select-default.png);
+                width: 21px;
+                height: 19px;
+                margin-top: 2px;
+              }
+              span.jquery-selectbox-currentItem {
+                font-size: 11px;
+                font-family: arial, sans-serif;
+                line-height: 16px;
+                padding-left: 8px;
+                color: #999999;
+              }
+              .jquery-selectbox-list {
+                width: 196px !important;
+                height: 50px !important;
+                border: 1px solid #cfcdc5;
+                background-color: #fff;
+                top: 23px;
+                padding: 2px 0;
+                span {
+                  font-size: 11px;
+                  font-family: arial, sans-serif;
+                  line-height: 16px;
+                  padding-left: 8px;
+                  color: #999;
+                }
+                span.listelementhover {
+                  background-color: #cacaca;
+                }
+              }
+            }
+            .jquery-selectbox.selecthover {
+              border: 1px solid #cfcdc5;
+              background-color: #fff;
+              background-image: none;
+            }
+
+            &.active-select {
+              .jquery-selectbox {
+                span.jquery-selectbox-currentItem {
+                  color: #231f20;
+                }
+              }
+              .jquery-selectbox-moreButton {
+                background: url(../images/img-select-active.png);
+              }
+              .jquery-selectbox-moreButton.morebuttonhover {
+                background: url(../images/img-select-active.png);
+              }
+              .jquery-selectbox-list {
+                span {
+                  color: #231f20;
+                }
+                span.listelementhover {
+                  background-color: #615b49;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
     }
   }
 }

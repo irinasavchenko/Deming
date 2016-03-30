@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <title>Deming-Test-Task</title>
   <link rel="stylesheet" href="styles/style.css">
-
-  <!--JQuery-->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-  <!--Bootstrap -->
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="./jquery.selectbox-0.6.1/css/jquery.selectbox.css" />
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./jquery.selectbox-0.6.1/js/jquery.selectbox-0.6.1.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.3.0.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function() {
-      $( "#tabs" ).tabs();
+      $("#tabs").tabs();
+      $("select").selectbox();
     });
   </script>
 </head>
 <body>
 
 <div id="wrapper">
-  <div class="content-wrapper center">
+  <div class="content-wrapper center clearfix">
     <header>
       <div class="content_header center">
         <div class="logo">
@@ -199,10 +200,62 @@
 
       </div>
 
-    <div class="sidebar"></div>
-
+    <div class="sidebar">
+      <h3>Holiday Search</h3>
+      <div class="selects">
+        <ul class="list-selects">
+          <li class="active-select">
+            <form action="#">
+              <select>
+                <option>Select Region</option>
+                <option>Select Region1</option>
+                <option>Select Region2</option>
+                <option>Select Region3</option>
+                <option>Select Region4</option>
+              </select>
+            </form>
+          </li>
+          <li>
+            <form action="#">
+              <select>
+                <option>Select Category</option>
+                <option>Select Category1</option>
+                <option>Select Category2</option>
+                <option>Select Category3</option>
+                <option>Select Category4</option>
+              </select>
+            </form>
+          </li>
+          <li>
+            <form action="#">
+              <select>
+                <option>Select Date</option>
+                <option>Select Date1</option>
+                <option>Select Date2</option>
+                <option>Select Date3</option>
+                <option>Select Date4</option>
+              </select>
+            </form>
+          </li>
+          <li>
+            <form action="#">
+              <select>
+                <option>Select Price</option>
+                <option>Select Price1</option>
+                <option>Select Price2</option>
+                <option>Select Price3</option>
+                <option>Select Price4</option>
+              </select>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </div>
+
+
+
 </body>
 </html>
