@@ -9,7 +9,6 @@ html, body {
 #ie {
   #wrapper .main-content-wrapper .content-wrapper {
     .sidebar {
-      width: 249px;
       .search-part {
         .jquery-selectbox {
           filter: none;
@@ -420,14 +419,14 @@ button:focus {
     }
     .sidebar {
       float: right;
-      width: 250px;
+      width: 249px;
       background-color: #ffffff;
       color: #3f3b30;
       .search-part, .sign-up-part, .news-part {
         border-bottom: 1px solid #e1dbce;
         .wrapper-sidebar {
           background-color: #f4f2ec;
-          margin: 1px;
+          margin: 1px 1px 0 0;
           padding: 20px;
           border-left: 1px solid #e8e3da;
             h3 {
@@ -601,7 +600,7 @@ button:focus {
               padding: 0;
             }
           .news:last-child {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
           }
           }
         .wrapper-sidebar {
@@ -655,7 +654,7 @@ button:focus {
       .twitter-info {
         float: left;
         width: 250px;
-        padding: 0 25px 0 20px;
+        padding: 0 31px 0 23px;
         a.twitter {
           font-family: "Klavika Medium Plain";
           background: url("../images/img-twitter.png") no-repeat right center;
@@ -678,7 +677,7 @@ button:focus {
       }
       .links-info, .contacts-info {
         float: left;
-        padding: 0 30px;
+        padding: 0 40px 0 25px;
         ul {
           float: left;
           margin-right: 45px;
@@ -713,6 +712,9 @@ button:focus {
         p>span {
           font-weight: bold;
         }
+      }
+      div:last-child {
+        padding-right: 15px;
       }
     }
   }
