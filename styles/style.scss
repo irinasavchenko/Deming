@@ -2,7 +2,18 @@
 @import "_mixins";
 @import "_fonts";
 
+html, body {
+  height: 100%;
+}
 
+#wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.main-content-wrapper {
+  padding-bottom: 116px;
+}
 
 
 .center {
@@ -147,7 +158,7 @@ button:focus {
                 color: #fff;
                 font-family: arial, sans-serif;
               }
-              p > span {
+              p > a {
                 color: #28b028;
               }
               ul {
@@ -704,13 +715,19 @@ button:focus {
       }
     }
   footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 116px;
     text-align: center;
-    padding: 20px 0 72px 0;
+
     h5 {
       font-size: 11px;
       font-family: arial, sans-serif;
       font-weight: bold;
       color: #3a3731;
+      margin-top: 20px;
     }
     p {
       color: #716c61;
@@ -718,9 +735,7 @@ button:focus {
       font-size: 11px;
       margin: 10px 0 0 0;
     }
-
   }
-
 }
 
 
