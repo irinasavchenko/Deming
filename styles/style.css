@@ -59,6 +59,12 @@ html, body {
     #ie #wrapper .main-content-wrapper .content-wrapper .sidebar .search-part .jquery-selectbox .jquery-selectbox-list {
       width: 196px;
       height: 50px; }
+  #ie #wrapper .main-content-wrapper .content-wrapper .sidebar button.search {
+    display: none; }
+  #ie #wrapper .main-content-wrapper .content-wrapper .sidebar .btn-search-IE9 {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer; }
 
 #wrapper {
   position: relative;
@@ -503,6 +509,11 @@ button:focus {
                 position: absolute;
                 right: -19px;
                 top: -1px; }
+          #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .btn-search-IE9, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .btn-search-IE9, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .btn-search-IE9 {
+            width: 202px;
+            height: 42px;
+            background-image: url("../images/img-btn-search.png");
+            display: none; }
           #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="email"] {
             width: 115px;
             height: 24px;
@@ -580,7 +591,7 @@ button:focus {
       #wrapper .basement .content-basement .twitter-info {
         float: left;
         width: 250px;
-        padding: 0 30px 0 20px; }
+        padding: 0 25px 0 20px; }
         #wrapper .basement .content-basement .twitter-info a.twitter {
           font-family: "Klavika Medium Plain";
           background: url("../images/img-twitter.png") no-repeat right center;

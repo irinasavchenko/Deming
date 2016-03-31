@@ -24,6 +24,14 @@ html, body {
           }
         }
       }
+      button.search {
+        display: none;
+      }
+      .btn-search-IE9 {
+        display: block;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -201,7 +209,6 @@ button:focus {
                   border-radius: 25px;
                   color: #ffffff;
                   line-height: 23px;
-
                 }
               }
             }
@@ -216,7 +223,6 @@ button:focus {
               border: 1px solid #6b685e;
               cursor: pointer;
               text-indent: 0;
-
               &.active {
                 width: 25px;
                 height: 25px;
@@ -257,7 +263,6 @@ button:focus {
             }
           }
         }
-
         .tabs-block {
           border: none;
           padding: 0;
@@ -271,14 +276,12 @@ button:focus {
               height: 38px;
               border: 1px solid #d8d6cf;
               background: #fff;
-
               &.ui-state-active {
                 border: 1px solid #59ba39;
 //                background: #59ba39;
                 @include gradient(top, #66c13e, #0f941a);
                 font-weight: normal;
               }
-
               a:focus {
                 outline: none;
               }
@@ -286,15 +289,11 @@ button:focus {
             li:last-child {
               border-radius: 0 8px 8px 0;
             }
-
             li:first-child {
               border-radius: 8px 0 0 8px;
             }
             li.ui-tabs-active {
               margin: 1px 0 -1px 0;
-            }
-            .ui-state-default {
-
             }
             .ui-state-active {
               background: #59ba39;
@@ -538,16 +537,6 @@ button:focus {
               border-radius: 5px 0 0 5px;
               margin-top: 3px;
               margin-bottom: 20px;
-
-
-//              span.button-arrow {
-//                height: 34px;
-//                width: 19px;
-//                background-image: url(../images/img-button-arrow.png);
-//                position: absolute;
-//                right: -19px;
-//                top: -1px;
-//              }
               .button {
                 background: url(../images/img-button-arrow-right.png) no-repeat 95% 50%;
                 width: 100%;
@@ -575,7 +564,13 @@ button:focus {
                 }
               }
             }
-            input[type="text"], input[type="email"] {
+          .btn-search-IE9 {
+            width: 202px;
+            height: 42px;
+            background-image: url("../images/img-btn-search.png");
+            display: none;
+          }
+             input[type="text"], input[type="email"] {
               width: 115px;
               height: 24px;
               border: 1px solid #cfcdc5;
@@ -660,8 +655,7 @@ button:focus {
       .twitter-info {
         float: left;
         width: 250px;
-//        border-right: 1px solid #d8d6ce;
-        padding: 0 30px 0 20px;
+        padding: 0 25px 0 20px;
         a.twitter {
           font-family: "Klavika Medium Plain";
           background: url("../images/img-twitter.png") no-repeat right center;
@@ -681,9 +675,7 @@ button:focus {
           width: 198px;
           height: 37px;
         }
-
       }
-
       .links-info, .contacts-info {
         float: left;
         padding: 0 30px;
@@ -708,10 +700,8 @@ button:focus {
           font-family: "Klavika Medium Plain";
           text-transform: uppercase;
         }
-
       }
       .contacts-info {
-//        border-left: 1px solid #d8d6ce;
         h3 {
 
         }
