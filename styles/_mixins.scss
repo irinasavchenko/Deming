@@ -2,4 +2,7 @@
   background: -webkit-linear-gradient($place, $st-color, $end-color);
   background: -moz-linear-gradient($place, $st-color, $end-color);
   background: -ms-linear-gradient($place, $st-color, $end-color);
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$st-color}', EndColorStr='#{$end-color}')";
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$st-color}', EndColorStr='#{$end-color}')";
 }
+

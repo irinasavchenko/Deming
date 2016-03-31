@@ -48,6 +48,15 @@ table {
 html, body {
   height: 100%; }
 
+#ie #wrapper .main-content-wrapper .content-wrapper .sidebar {
+  width: 249px; }
+  #ie #wrapper .main-content-wrapper .content-wrapper .sidebar .search-part .jquery-selectbox {
+    filter: none;
+    -ms-filter: none; }
+    #ie #wrapper .main-content-wrapper .content-wrapper .sidebar .search-part .jquery-selectbox span.jquery-selectbox-currentItem {
+      box-shadow: none;
+      background-color: #fff; }
+
 #wrapper {
   position: relative;
   min-height: 100%; }
@@ -112,7 +121,7 @@ button:focus {
               text-transform: uppercase;
               color: #209a28;
               font-family: "Zurich__Condensed_BT";
-              padding-left: 20px;
+              padding-left: 18px;
               text-decoration: none; }
     #wrapper .content-wrapper nav.main-nav {
       height: 40px;
@@ -120,6 +129,8 @@ button:focus {
       background: -webkit-linear-gradient(top, #66c13e, #0f941a);
       background: -moz-linear-gradient(top, #66c13e, #0f941a);
       background: -ms-linear-gradient(top, #66c13e, #0f941a);
+      filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
       box-shadow: inset 1px 1px 1px #81de41; }
       #wrapper .content-wrapper nav.main-nav ul {
         display: block;
@@ -129,7 +140,7 @@ button:focus {
           float: left; }
           #wrapper .content-wrapper nav.main-nav ul li a {
             text-decoration: none;
-            padding: 12px 20px;
+            padding: 12px 18px;
             line-height: 40px;
             color: #fff;
             font-size: 15px;
@@ -232,6 +243,9 @@ button:focus {
             position: absolute;
             right: 45px;
             bottom: -10px; }
+            #wrapper .content-wrapper .main-content .wrapper-main-content .slider .photographer img {
+              width: 187px;
+              height: 148px; }
         #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block {
           border: none;
           padding: 0; }
@@ -334,7 +348,9 @@ button:focus {
                 font-family: arial, sans-serif; }
                 #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li a img {
                   border: 4px solid #e9e6df;
-                  border-radius: 8px; }
+                  border-radius: 8px;
+                  width: 212px;
+                  height: 98px; }
                 #wrapper .content-wrapper .main-content .wrapper-main-content .tab-wrapper.ui-widget-content.ui-tabs-panel ul li a h3 {
                   font-weight: bold;
                   font-size: 14px;
@@ -387,7 +403,9 @@ button:focus {
               box-shadow: 0px 0 3px #adaaa3;
               background: -webkit-linear-gradient(top, #ffffff, #f4f3f1);
               background: -moz-linear-gradient(top, #ffffff, #f4f3f1);
-              background: -ms-linear-gradient(top, #ffffff, #f4f3f1); }
+              background: -ms-linear-gradient(top, #ffffff, #f4f3f1);
+              filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#f4f3f1')";
+              -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#f4f3f1')"; }
               #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li .jquery-selectbox .jquery-selectbox-moreButton {
                 background: url(../images/img-select-default.png);
                 width: 21px;
@@ -425,7 +443,9 @@ button:focus {
               background-image: none;
               background: -webkit-linear-gradient(top, #ffffff, #f4f3f1);
               background: -moz-linear-gradient(top, #ffffff, #f4f3f1);
-              background: -ms-linear-gradient(top, #ffffff, #f4f3f1); }
+              background: -ms-linear-gradient(top, #ffffff, #f4f3f1);
+              filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#f4f3f1')";
+              -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#f4f3f1')"; }
             #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox span.jquery-selectbox-currentItem {
               color: #231f20; }
             #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar .selects ul.list-selects li.active-select .jquery-selectbox-moreButton {
@@ -445,6 +465,8 @@ button:focus {
             background: -webkit-linear-gradient(top, #66c13e, #0f941a);
             background: -moz-linear-gradient(top, #66c13e, #0f941a);
             background: -ms-linear-gradient(top, #66c13e, #0f941a);
+            filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
             position: relative;
             box-shadow: 0px 0 5px #7b7b78;
             z-index: 2;
@@ -492,6 +514,8 @@ button:focus {
             background: -webkit-linear-gradient(top, #66c13e, #0f941a);
             background: -moz-linear-gradient(top, #66c13e, #0f941a);
             background: -ms-linear-gradient(top, #66c13e, #0f941a);
+            filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
             box-shadow: 0px 0 5px #7b7b78;
             font-family: "Klavika Medium Plain";
             font-size: 14px;
@@ -524,6 +548,8 @@ button:focus {
       background: -webkit-linear-gradient(top, #999387, #6f685e);
       background: -moz-linear-gradient(top, #999387, #6f685e);
       background: -ms-linear-gradient(top, #999387, #6f685e);
+      filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#999387', EndColorStr='#6f685e')";
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#999387', EndColorStr='#6f685e')";
       border-radius: 5px; }
       #wrapper .basement .name-basement p {
         font-size: 16px;
