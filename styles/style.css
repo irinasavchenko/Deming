@@ -56,6 +56,9 @@ html, body {
     #ie #wrapper .main-content-wrapper .content-wrapper .sidebar .search-part .jquery-selectbox span.jquery-selectbox-currentItem {
       box-shadow: none;
       background-color: #fff; }
+    #ie #wrapper .main-content-wrapper .content-wrapper .sidebar .search-part .jquery-selectbox .jquery-selectbox-list {
+      width: 196px;
+      height: 50px; }
 
 #wrapper {
   position: relative;
@@ -261,7 +264,11 @@ button:focus {
               background: #fff; }
               #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li.ui-state-active {
                 border: 1px solid #59ba39;
-                background: #59ba39;
+                background: -webkit-linear-gradient(top, #66c13e, #0f941a);
+                background: -moz-linear-gradient(top, #66c13e, #0f941a);
+                background: -ms-linear-gradient(top, #66c13e, #0f941a);
+                filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
                 font-weight: normal; }
               #wrapper .content-wrapper .main-content .wrapper-main-content .tabs-block ul li a:focus {
                 outline: none; }
@@ -462,30 +469,24 @@ button:focus {
             border: 1px solid #0c932f;
             border-right: none;
             padding: 0;
+            position: relative;
             background: -webkit-linear-gradient(top, #66c13e, #0f941a);
             background: -moz-linear-gradient(top, #66c13e, #0f941a);
             background: -ms-linear-gradient(top, #66c13e, #0f941a);
             filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
             -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#66c13e', EndColorStr='#0f941a')";
-            position: relative;
             box-shadow: 0px 0 5px #7b7b78;
             z-index: 2;
             border-radius: 5px 0 0 5px;
             margin-top: 3px;
             margin-bottom: 20px; }
-            #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search span.button-arrow, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search span.button-arrow, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search span.button-arrow {
-              height: 34px;
-              width: 19px;
-              background-image: url(../images/img-button-arrow.png);
-              position: absolute;
-              right: -19px;
-              top: -1px; }
             #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search .button, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search .button, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search .button {
               background: url(../images/img-button-arrow-right.png) no-repeat 95% 50%;
               width: 100%;
               height: 100%;
               z-index: 999;
-              box-shadow: inset 1px 1px 1px #81de41; }
+              box-shadow: inset 1px 1px 1px #81de41;
+              position: relative; }
               #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search .button p, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search .button p, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search .button p {
                 font-family: "Klavika Medium Plain";
                 text-transform: uppercase;
@@ -495,6 +496,13 @@ button:focus {
                 margin: 0;
                 text-align: left;
                 line-height: 32px; }
+              #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar button.search .button span.button-arrow, #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar button.search .button span.button-arrow, #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar button.search .button span.button-arrow {
+                height: 34px;
+                width: 19px;
+                background-image: url(../images/img-button-arrow.png);
+                position: absolute;
+                right: -19px;
+                top: -1px; }
           #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .search-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .sign-up-part .wrapper-sidebar input[type="email"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="text"], #wrapper .content-wrapper .sidebar .news-part .wrapper-sidebar input[type="email"] {
             width: 115px;
             height: 24px;
@@ -562,11 +570,17 @@ button:focus {
       padding-top: 20px;
       height: 165px;
       width: 100%; }
+      #wrapper .basement .content-basement .add-div-vertic-line {
+        width: 1px;
+        height: 120px;
+        border-right: 1px solid #d8d6ce;
+        float: left;
+        margin-top: -5px;
+        display: block; }
       #wrapper .basement .content-basement .twitter-info {
         float: left;
         width: 250px;
-        border-right: 1px solid #d8d6ce;
-        padding: 0 30px 0 21px; }
+        padding: 0 30px 0 20px; }
         #wrapper .basement .content-basement .twitter-info a.twitter {
           font-family: "Klavika Medium Plain";
           background: url("../images/img-twitter.png") no-repeat right center;
@@ -601,14 +615,12 @@ button:focus {
           color: #64522a;
           font-family: "Klavika Medium Plain";
           text-transform: uppercase; }
-      #wrapper .basement .content-basement .contacts-info {
-        border-left: 1px solid #d8d6ce; }
-        #wrapper .basement .content-basement .contacts-info p {
-          font-size: 12px;
-          font-family: arial, sans-serif;
-          color: #757268; }
-        #wrapper .basement .content-basement .contacts-info p > span {
-          font-weight: bold; }
+      #wrapper .basement .content-basement .contacts-info p {
+        font-size: 12px;
+        font-family: arial, sans-serif;
+        color: #757268; }
+      #wrapper .basement .content-basement .contacts-info p > span {
+        font-weight: bold; }
   #wrapper footer {
     position: absolute;
     left: 0;

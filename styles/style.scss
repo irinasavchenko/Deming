@@ -18,6 +18,10 @@ html, body {
             box-shadow: none;
             background-color: #fff;
           }
+          .jquery-selectbox-list {
+            width: 196px;
+            height: 50px;
+          }
         }
       }
     }
@@ -270,7 +274,8 @@ button:focus {
 
               &.ui-state-active {
                 border: 1px solid #59ba39;
-                background: #59ba39;
+//                background: #59ba39;
+                @include gradient(top, #66c13e, #0f941a);
                 font-weight: normal;
               }
 
@@ -526,28 +531,30 @@ button:focus {
               border: 1px solid #0c932f;
               border-right: none;
               padding: 0;
-              @include gradient(top, #66c13e, #0f941a);
               position: relative;
+              @include gradient(top, #66c13e, #0f941a);
               box-shadow: 0px 0 5px #7b7b78;
               z-index: 2;
               border-radius: 5px 0 0 5px;
               margin-top: 3px;
               margin-bottom: 20px;
 
-              span.button-arrow {
-                height: 34px;
-                width: 19px;
-                background-image: url(../images/img-button-arrow.png);
-                position: absolute;
-                right: -19px;
-                top: -1px;
-              }
+
+//              span.button-arrow {
+//                height: 34px;
+//                width: 19px;
+//                background-image: url(../images/img-button-arrow.png);
+//                position: absolute;
+//                right: -19px;
+//                top: -1px;
+//              }
               .button {
                 background: url(../images/img-button-arrow-right.png) no-repeat 95% 50%;
                 width: 100%;
                 height: 100%;
                 z-index: 999;
                 box-shadow: inset 1px 1px 1px #81de41;
+                position: relative;
                 p {
                   font-family: "Klavika Medium Plain";
                   text-transform: uppercase;
@@ -558,6 +565,14 @@ button:focus {
                   text-align: left;
                   line-height: 32px;
                 }
+                span.button-arrow {
+                  height: 34px;
+                  width: 19px;
+                  background-image: url(../images/img-button-arrow.png);
+                  position: absolute;
+                  right: -19px;
+                  top: -1px;
+                }
               }
             }
             input[type="text"], input[type="email"] {
@@ -565,7 +580,7 @@ button:focus {
               height: 24px;
               border: 1px solid #cfcdc5;
               border-radius: 5px;
-              box-shadow: 0px 0 3px #adaaa3;;
+              box-shadow: 0px 0 3px #adaaa3;
               padding-left: 10px;
               font-size: 11px;
               color: #666666;
@@ -634,11 +649,19 @@ button:focus {
       padding-top: 20px;
       height: 165px;
       width: 100%;
+      .add-div-vertic-line {
+        width: 1px;
+        height: 120px;
+        border-right: 1px solid #d8d6ce;
+        float: left;
+        margin-top: -5px;
+        display: block;
+      }
       .twitter-info {
         float: left;
         width: 250px;
-        border-right: 1px solid #d8d6ce;
-        padding: 0 30px 0 21px;
+//        border-right: 1px solid #d8d6ce;
+        padding: 0 30px 0 20px;
         a.twitter {
           font-family: "Klavika Medium Plain";
           background: url("../images/img-twitter.png") no-repeat right center;
@@ -658,7 +681,9 @@ button:focus {
           width: 198px;
           height: 37px;
         }
+
       }
+
       .links-info, .contacts-info {
         float: left;
         padding: 0 30px;
@@ -686,7 +711,7 @@ button:focus {
 
       }
       .contacts-info {
-        border-left: 1px solid #d8d6ce;
+//        border-left: 1px solid #d8d6ce;
         h3 {
 
         }
@@ -699,7 +724,6 @@ button:focus {
           font-weight: bold;
         }
       }
-
     }
   }
   footer {
